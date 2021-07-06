@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="shopping_card.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <h2>Shopping Bag total : $<span id="total">0</span></h2>
+        </div>
+        <div class="item">
+            <div class="product">
+                <button onclick="remove(this)" class="remove"><i class="fas fa-times"></i></button>
+                <button  class="favorite"><i onclick="favorite(this)" class="fas fa-heart"></i></button>
+                <img src="anthemstandard.jpg" alt="anthem">
+                <p>Anthem</p>
+            </div>
+            <div class="quantity">
+                <button onclick="plus(this)" class="plus"><i class="fas fa-plus"></i></button>
+                <input type="number" name="quantity" class="quantity-value"
+                min="0" max="100" step="1" value="0">
+                <button onclick="moins(this)" class="minus"><i class="fas fa-minus"></i></button>
+            </div>
+            <p class="price">$60</p>
+        </div>
+        <div class="item">
+            <div class="product">
+                <button onclick="remove(this)" class="remove"><i class="fas fa-times"></i></button>
+                <button  class="favorite"><i onclick="favorite(this)" class="fas fa-heart"></i></button>
+                <img src="6707584-l.jpg" alt="Assassins">
+                <p>Assassins Creed ODYSSEY</p>
+            </div>
+            <div class="quantity">
+                <button onclick="plus(this)" class="plus"><i class="fas fa-plus"></i></button>
+                <input type="number" name="quantity" class="quantity-value"
+                min="0" max="100" step="1" value="0">
+                <button onclick="moins(this)" class="minus"><i class="fas fa-minus"></i></button>
+            </div>
+            <p class="price">$65</p>
+        </div>
+        <div class="item">
+            <div class="product">
+                <button onclick="remove(this)" class="remove"><i class="fas fa-times"></i></button>
+                <button class="favorite"><i onclick="favorite(this)" class="fas fa-heart"></i></button>
+                <img src="51kHvi35rFL.jpg" alt="Forza">
+                <p>Shadow Of The Tomb Raider</p>
+            </div>
+            <div class="quantity">
+                <button onclick="plus(this)" class="plus"><i class="fas fa-plus"></i></button>
+                <input type="number" name="quantity" class="quantity-value"
+                min="0" max="100" step="1" value="0">
+                <button onclick="moins(this)" class="minus"><i class="fas fa-minus"></i></button>
+            </div>
+            <p class="price">$70</p>
+        </div>
+    </div>
+    <script src="shoppingcart.js" type="text/javascript"></script>
+</body>
+
+</html>
